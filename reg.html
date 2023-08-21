@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registeration Form</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="logo" style="text-align: left;"><a href=" ">TastyJunction</a></div>
+
+            <header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="aboutus.html">About Us </a></li>
+                    <li><a href="reg.html">Register with Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </header>
+        </nav>
+        <h1 style="text-align: center;">Registration Form</h1>
+        <div class="registration">
+            <form action="">
+                <div class="innerform">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter Your First Name" class="input" required />
+                        
+                    </div>
+                    <div style="text-align: center;"><span id="fnameerror" style="color: red;"></span></div>
+                    <br />
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" class="input" required />
+                    </div>
+                    <div style="text-align: center;">
+                        <span id="lnameerror" style="color: red;"></span>
+                    </div>
+                    <br />
+
+                    <div>
+                        <label for="DOB">Date of Birth</label>
+                        <input type="date" name="DOB" id="DOB" required />
+                    </div>
+                    <div style="text-align: center;">                    <span id="doberror" style="color: red; "></span>
+                        <span id="doberror" style="color: red; "></span>
+                    </div>
+                    <br />
+
+                    <div>
+                        <label for="Age">Age</label>
+                        <input type="text" id="age" name="age" class="input" />
+                    </div>
+                    <br />
+                    <div class="gender">
+                        <label for="Gender" class="input"> Gender <input type="radio" id="male" name="gender" value="Male" /> Male <input type="radio" id="female" name="gender" value="Female" /> Female <input type="radio" id="other" name="gender" value="other" /> other
+                        </label>
+                    </div>
+                    <br />
+
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="name@gmail.com" class="input" required />
+                    </div>
+                    <div style="text-align: center;">
+                        <span id="emailerror" style="color: red;"></span>
+                    </div>
+                    <br />
+
+                    <div class="contact_num">
+                        <label for="phno">Contact Number:</label>
+                        <input type="tel" id="phno" name="phno" placeholder="67890xxxxx" maxlength="10" class="input" required />
+                    </div>
+                    <div style="text-align: center;">
+                        <span id="contacterror" style="color: red;"></span>
+                    </div>
+                    
+                    <br />
+
+                    <div class="add">
+                        <label for="Address">Address:</label>
+                        <textarea name="address" id="add" cols="20" rows="10" required> </textarea>
+                    </div>
+                    <br />
+
+                    <div class="wrapper">
+                        <label for="state">State:</label>
+                        <select name="state" id="state">
+                            <option value="">Select State</option>
+                            <option value="TN">Tamilnadu</option>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="MP">Madhya Pradesh </option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="KL">Kerala</option>
+                        </select>
+
+                        <select name="city" id="city">
+                            <option value="">Select City</option>
+                        </select>
+                    </div>
+
+                    <div class="username">
+                        <label for="uname">Username:</label>
+                        <input type="text" name="uname" id="uname" placeholder="Enter your username" class="input" />
+                    </div>
+                        <div style="text-align: center;">
+                            <span id="unameerror" style="color: red;" width="300px"></span>
+
+                        </div>
+                        
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="pass" placeholder="Enter Your Password"  class="input"  />
+                        <div style="text-align: center;"><span id="passerror" style="color: red;"></span></div>
+                        
+                        <label for="cpass">Confirm Password:</label>
+                        <input type="password" name="cpass" id="cpass" placeholder="Confirm your Password" required class="input"/>
+                        <div style="text-align: center;">
+                        <span id="cpasserror" style="color: red;"></span>          
+                        </div>
+                        <input type="button" value="Register" id="btn" />
+                    
+                </div>
+            </form>
+        </div>
+        <footer class="footer">
+            <h2>Follow us on</h2>
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Linkedin</a>
+            <p>&copy; 2023 TastyJunction. All Rights Reserved. | Website designed and developed by TastyJunction.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
